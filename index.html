@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Space Dynamics Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .logo-container {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #0c0c1a 0%, #1a1a2e 30%, #2d2d4a 70%, #1e1e3f 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-text {
+            font-size: 66px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1;
+            margin: 0;
+        }
+        
+        .deep {
+            color: #8a9cff;
+            text-shadow: 0 0 20px rgba(138, 156, 255, 0.5);
+        }
+        
+        .space {
+            color: #7b8eff;
+            text-shadow: 0 0 20px rgba(123, 142, 255, 0.5);
+        }
+        
+        .dynamics {
+            color: #6c7fff;
+            text-shadow: 0 0 20px rgba(108, 127, 255, 0.5);
+        }
+        
+        /* Blue space background pattern */
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(138, 156, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(108, 127, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(123, 142, 255, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo-stack">
+            <div class="logo-text deep">DEEP</div>
+            <div class="logo-text space">SPACE</div>
+            <div class="logo-text dynamics">DYNAMICS</div>
+        </div>
+    </div>
+</body>
+</html>
